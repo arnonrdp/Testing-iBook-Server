@@ -6,6 +6,10 @@
     "deploy": "wrangler deploy",
     "start": "wrangler dev"
   },
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "json-server-auth": "^2.1.0"
+  },
   "devDependencies": {
     "wrangler": "^3.0.0"
   }
