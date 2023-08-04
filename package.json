@@ -1,16 +1,14 @@
 {
-  "name": "sample-node-server",
-  "version": "1.0.0",
-  "private": true,
   "scripts": {
-    "deploy": "wrangler deploy",
-    "start": "wrangler dev"
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts"
   },
   "dependencies": {
-    "json-server": "^0.17.0",
-    "json-server-auth": "^2.1.0"
+    "hono": "^3.3.4"
   },
   "devDependencies": {
-    "wrangler": "^3.0.0"
+    "@cloudflare/workers-types": "^4.20230628.0",
+    "@types/json-server": "^0.14.4",
+    "wrangler": "^3.1.2"
   }
 }
