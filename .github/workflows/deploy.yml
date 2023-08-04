@@ -19,9 +19,8 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Deploy
-        run: npm run deploy
-        # uses: cloudflare/wrangler-action@2.0.0
-        # with:
-        #   apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        #   accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        #   command: deploy --name=ibook-server
+        uses: cloudflare/wrangler-action@2.0.0
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --name=ibook-server

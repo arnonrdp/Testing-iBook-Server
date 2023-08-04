@@ -1,4 +1,4 @@
 name = "ibook-server"
 main = "src/worker.js"
-compatibility_date = "2023-01-01"
+compatibility_date = "2023-08-01"
 account_id = "16a39c1df499163eb5b9d7bb4c782489"
