@@ -8,7 +8,7 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
-import books from 'db.json'
+import books from './db.json'
 
 export default {
   async fetch(request, env, ctx) {
