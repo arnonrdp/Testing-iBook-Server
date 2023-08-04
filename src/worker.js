@@ -8,13 +8,11 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
+import books from 'db.json'
+
 export default {
   async fetch(request, env, ctx) {
-    const data = {
-      name: 'Globe & Citizen',
-      products: ['Celebrity Fanalyzer', 'Layer 8', 'Crypto Tips', 'Globe & Citizen']
-    }
-    const jsonData = JSON.stringify(data)
+    const jsonData = JSON.stringify(books)
 
     return new Response(jsonData, {
       headers: {
